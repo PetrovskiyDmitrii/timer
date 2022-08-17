@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #050b16;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time_box {
+  height: 280px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid #458c9b;
+  padding: 28px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 45px #fff;
+}
+
+.time_box .title {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #2d4254e6;
+  filter: drop-shadow(2px -1px 0px #000);
+}
+
+.title span {
+  display: block;
+  font-size: 10px;
+  margin: 0 auto 40px;
+  text-align: center;
+  filter: unset;
+}
+
+.timer_info,
+.btn {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.timer_info {
+  justify-content: center;
+  font-size: 26px;
+  line-height: 45px;
+  padding-top: 5px;
+  font-family: "Press Start 2P", cursive;
+  width: 100%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    #2c3e50 0%,
+    #4ca1af 51%,
+    #2c3e50 100%
+  );
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.shadow {
+  animation: shadow 1s infinite linear;
+}
+
+@keyframes shadow {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      #2c3e50 0%,
+      #4ca1af 51%,
+      #2c3e50 100%
+    );
+  }
+  100% {
+    background-position: right center;
+  }
+}
+
+.btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #2c3e50 0%,
+    #4ca1af 51%,
+    #2c3e50 100%
+  );
+  margin-bottom: 15px;
+  outline: unset;
+  border: unset;
+  letter-spacing: 1px;
+}
+
+.btn button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
