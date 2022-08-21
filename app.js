@@ -21,7 +21,7 @@ function start_time() {
         convertSecondsToTime();
     }, 10);
 
-    timer.classList.add("shadow");
+    // timer.classList.add("shadow");
 }
 
 function convertSecondsToTime() {
@@ -44,12 +44,12 @@ function convertSecondsToTime() {
 
 function stop_time() {
     clearInterval(timer_interval);
-    timer.classList.remove("shadow");
+    // timer.classList.remove("shadow");
 }
 
 function reset_time() {
     clearInterval(timer_interval);
-    timer.classList.remove("shadow");
+    // timer.classList.remove("shadow");
     timeInSec = 0;
     timer.textContent = "00:00:00";
 }
